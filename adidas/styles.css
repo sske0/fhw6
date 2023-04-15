@@ -1,0 +1,903 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  border-bottom: 1px solid rgb(207, 212, 199);
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.navbar-list li {
+  font-size: 15px;
+}
+
+.navbar-list li :hover {
+  border-bottom: #000000 solid 2px;
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #000000;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0%;
+  padding-left: 5px;
+  height: 35px;
+  width: 200px;
+  background-color: #eceff1;
+}
+
+.form-wrapper {
+  height: 35px;
+  width: 205px;
+}
+.form-wrapper:focus-within {
+  outline: 1px solid #1a1b1b;
+}
+
+.search-form input {
+  border: 0;
+  flex: 1;
+  background: transparent;
+  outline: none;
+}
+
+.header__upper-part {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.header__upper-part > span {
+  font-size: 12px;
+  font-weight: 700;
+  align-self: center;
+  color: white;
+}
+
+.header__lower-part {
+  width: 100%;
+  height: 81px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.us-flag {
+  top: 10px;
+  cursor: pointer;
+  width: 20px;
+  height: 10px;
+  margin-top: 2px;
+}
+
+.search-form button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+}
+
+.search-form button i {
+  font-size: 20px;
+}
+
+.logo {
+  margin-left: -100px;
+  width: 60px;
+  height: 37px;
+  color: #007bff;
+}
+
+.arrow {
+  color: white;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.button-down {
+  margin-left: 10px;
+}
+
+.heart-button {
+  height: 27px;
+}
+
+.navbar ul li .active {
+  font-weight: 600;
+}
+
+.upper__navbar {
+  height: 30px;
+  position: relative;
+}
+
+.upper__navbar-list {
+  top: 10px;
+  right: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.upper__navbar-list li {
+  font-size: 11px;
+}
+
+.upper__navbar-list li:not(:nth-child(5)):hover {
+  padding-bottom: 0;
+  text-decoration: underline;
+}
+
+.upper__navbar-list li a {
+  text-decoration: none;
+  display: block;
+  padding: 0 13px;
+  color: #000000;
+}
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  z-index: 998;
+  display: none;
+  width: 100%;
+  height: 1000px;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.dropdown ul li {
+  margin: 7px 0;
+}
+
+.card img {
+  height: 80px;
+  width: 172px;
+}
+
+.dropdown ul li:hover {
+  text-decoration: underline;
+}
+
+.dropdown ul li span {
+  color: #000000;
+  font-size: 13px;
+}
+
+.dropdown h4 {
+  display: inline-block;
+  margin: 0;
+}
+
+.card {
+  margin: 150px 15px 0 0;
+  height: 470px;
+  width: 172px;
+}
+
+.card h4 {
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions-button {
+  font-size: 20px;
+}
+
+.user-button {
+  position: relative;
+}
+
+.user-button span {
+  display: block;
+  font-size: small;
+  position: absolute;
+  top: 4px;
+  left: 7px;
+}
+
+.notification {
+  animation: circle 1000ms linear infinite;
+  animation-delay: 3s;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  height: 22px;
+  width: 22px;
+  background-color: rgb(255, 238, 0);
+  border-radius: 50%;
+}
+
+.actions {
+  height: 40px;
+  width: 200px;
+  display: flex;
+  align-self: right;
+  justify-content: center;
+  align-items: end;
+}
+
+.actions button {
+  padding: 0 10px;
+}
+
+@keyframes circle {
+  0% {
+    bottom: 15px;
+    left: 20px;
+  }
+
+  10% {
+    bottom: 22px;
+    left: 20px;
+  }
+
+  20% {
+    bottom: 15px;
+    left: 20px;
+  }
+
+  30% {
+    bottom: 22px;
+    left: 20px;
+  }
+
+  40% {
+    bottom: 15px;
+    left: 20px;
+  }
+
+  100% {
+    bottom: 15px;
+    left: 20px;
+  }
+}
+
+.home-of-classics {
+  z-index: 100;
+  margin: 0;
+  width: 100%;
+  height: 532px;
+}
+
+.home-of-classics .image-container {
+  position: relative;
+  width: 100%;
+}
+
+.home-of-classics .image-container img {
+  width: 100%;
+  height: 532px;
+}
+
+.h1-and-buttons-container {
+  margin-left: 30px;
+  z-index: 1;
+  top: 100px;
+  position: absolute;
+}
+
+.h1-and-buttons-container p {
+  font-size: 18px;
+  color: white;
+}
+
+.h1-and-buttons-container h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.shop-button {
+  height: 55px;
+  display: block;
+  margin: 15px 0;
+  background-color: #000000;
+  border: #ffffff 1px solid;
+}
+
+.shop-button:hover span {
+  opacity: 0.5;
+}
+
+.shop-button:hover i {
+  opacity: 0.5;
+}
+
+.shop-button:active .button-container {
+  margin-left: -7px;
+  margin-top: -1px;
+}
+
+.shop-button i {
+  display: inline-block;
+  color: #000000;
+  font-size: 20px;
+}
+
+.shop-button span {
+  display: inline-block;
+  color: #000000;
+  margin: 20px 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sign-up-button {
+  height: 55px;
+  display: block;
+  margin: 15px 0;
+  background-color: transparent;
+  border: #000000 1px solid;
+}
+
+.sign-up-button span {
+  display: inline-block;
+  color: #ffffff;
+  margin: 20px 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sign-up-button i {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.sign-up-button:active .button-container {
+  margin-left: -7px;
+  margin-top: -1px;
+}
+
+.sign-up-button:active .button-container {
+  margin-left: -7px;
+  margin-top: -1px;
+}
+
+.sign-up-button .button-container {
+  margin-left: -10px;
+  margin-top: -5px;
+  height: 55px;
+  background-color: #000000;
+}
+
+.sign-up-btn {
+  width: 200px;
+}
+
+.sign-up-btn div {
+  width: 200px;
+}
+
+.shop-men-btn {
+  width: 170px;
+}
+
+.shop-men-btn div {
+  width: 170px;
+}
+
+.shop-women-btn {
+  width: 200px;
+}
+
+.shop-women-btn div {
+  width: 200px;
+}
+
+.shop-kids-btn {
+  width: 175px;
+}
+
+.shop-kids-btn div {
+  width: 175px;
+}
+
+.shop-button .button-container {
+  margin-left: -10px;
+  margin-top: -5px;
+  height: 55px;
+  background-color: #ffffff;
+}
+
+.categories {
+  width: 100%;
+  height: 274px;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.categories .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 234px;
+  width: 305px;
+  background-color: #eceef0;
+}
+
+.categories .card:first-child {
+  margin-left: 15px;
+}
+
+.categories .card .image-container img {
+  height: 177px;
+  width: 177px;
+}
+
+.categories .card a:nth-child(2) {
+  position: absolute;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 100;
+  bottom: 10px;
+  color: #000000;
+}
+
+.categories .card a:nth-child(2):hover span {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.new-arrivals {
+  width: 100%;
+  height: 485px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.new-arrivals li {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
+.new-arrivals ul {
+  display: inline-block;
+  margin: 0;
+}
+
+.titles {
+  position: absolute;
+  left: 20px;
+}
+
+.titles > .view-all-container {
+  margin-left: 300px;
+  display: inline-block;
+}
+
+.titles > .view-all-container > span > a {
+  color: #000000;
+}
+
+.titles > .view-all-container > span {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.titles > .view-all-container > span:hover a {
+  background-color: #000000;
+  color: white;
+}
+
+.buttons-container {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.titles > .buttons-container button {
+  color: #000000;
+}
+
+.titles > .buttons-container button {
+  background-color: transparent;
+  border: none;
+  height: 42px;
+  width: 42px;
+}
+
+.titles > .buttons-container button:hover {
+  background-color: black;
+}
+
+.titles > .buttons-container button:hover i {
+  color: white;
+}
+
+.titles > .buttons-container button a {
+  font-size: 20px;
+  color: #000000;
+}
+
+.titles > ul span {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.titles > ul li {
+  opacity: 0.3;
+}
+
+.titles > ul li:nth-child(1) {
+  opacity: 1;
+}
+
+.titles > ul li:nth-child(2) {
+  opacity: 1;
+}
+
+.new-arrivals {
+  width: 100%;
+  height: 500px;
+}
+.new-arrivals .cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 376px;
+}
+
+.new-arrivals > .cards .image-container {
+  height: 278px;
+  width: 278px;
+}
+
+.new-arrivals > .cards .image-container img {
+  margin-top: -10px;
+  height: 278px;
+  width: 278px;
+}
+
+.new-arrivals > .cards .card {
+  position: relative;
+  height: 376px;
+  width: 280px;
+}
+
+.new-arrivals > .cards .card:hover {
+  border: #3f3e3e solid 1px;
+}
+
+.new-arrivals > .cards .card:hover span {
+  bottom: 10px;
+}
+
+.new-arrivals .card .image-container span {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  display: block;
+  color: #000000;
+  background-color: white;
+}
+
+.new-arrivals .card .image-container button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 15px;
+  right: 10px;
+  display: block;
+}
+
+.new-arrivals .card .image-container button i {
+  font-size: 15px;
+}
+
+.new-arrivals .card a {
+  display: block;
+  color: #000000;
+  font-size: 13px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.new-arrivals .card .links-container {
+  left: 10px;
+  bottom: 0;
+  position: absolute;
+}
+
+.new-arrivals .card .links-container :nth-child(3) span {
+  opacity: 0.5;
+}
+
+.fourth-section {
+  width: 100%;
+  height: 530px;
+}
+
+.fourth-section .card {
+  display: inline-block;
+  position: relative;
+  height: 530px;
+  width: 302.5px;
+}
+
+.fourth-section .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.fourth-section .cards .card img {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 403px;
+  width: 302.5px;
+}
+
+.fourth-section .links-container {
+  position: absolute;
+  bottom: 20px;
+}
+
+.fourth-section .links-container a {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: #000000;
+}
+
+.fourth-section .links-container a:nth-child(3) {
+  font-size: 11px;
+}
+
+.fourth-section .links-container a button {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.fourth-section .links-container a button span:hover {
+  color: white;
+  background-color: #000000;
+}
+
+.more-fr-ad-stories {
+  margin-top: 200px;
+  width: 100%;
+  height: 332px;
+}
+
+.more-fr-ad-stories .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.more-fr-ad-stories .card {
+  position: relative;
+  margin: 70px 10px;
+  width: 300px;
+  height: 332px;
+}
+
+.more-fr-ad-stories .card img {
+  object-fit: cover;
+  width: 295px;
+  height: 193px;
+}
+
+.more-fr-ad-stories .paragraph-container {
+  position: absolute;
+  height: 137px;
+  width: 280px;
+  margin-left: 40px;
+  margin-top: -40px;
+  background-color: white;
+}
+
+.more-fr-ad-stories .paragraph-container p {
+  color: #000000;
+}
+
+.more-fr-ad-stories .paragraph-container h4 {
+  margin: 0%;
+  padding: 0%;
+  margin-bottom: -10px;
+}
+
+.h2-container {
+  margin-left: 25px;
+  margin-bottom: -80px;
+}
+
+.popular-right-now {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.popular-rn-container {
+  margin: 100px 20px 0;
+}
+
+.popular-rn-container .line {
+  height: 50px;
+  margin-top: 50px;
+}
+
+.popular-rn-container .category {
+  display: inline-block;
+  border-bottom: #000000 1px solid;
+  margin: 30px 10px;
+  width: 400px;
+  height: 46px;
+}
+
+.popular-rn-container .category:hover {
+  border-bottom: #000000 5px solid;
+}
+
+.popular-rn-container .category span {
+  color: #000000;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.paragraphs {
+  background-color: #f5f5e5;
+  display: flex;
+  justify-content: center;
+}
+
+.paragraphs .paragraph {
+  width: 625px;
+  height: 550px;
+}
+
+.paragraphs h1 {
+  width: 400px;  
+  font-size: 40px;
+}
+
+.paragraphs p {
+  width: 550px;
+  color: #1a1b1b;
+}
+
+.paragraph-2 h1 {
+  margin-bottom: 72px;
+}
+
+.join-adiclub {
+  height: 133px;
+  background-color: #ede734;
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-adiclub h1 {
+  margin-right: 50px;
+}
+
+.footer-lists {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-lists h4 {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.footer-lists li:not(:first-child) {
+  height: 24px;
+}
+
+.footer-lists li a {
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer-lists li a:hover {
+  text-decoration: underline;
+}
+
+.footer-lists .ul-container {
+  margin: 0 15px;
+}
+
+.footer-lists .ul-container:nth-child(6) {
+  width: 50px;
+}
+
+.footer-lists .ul-container:nth-child(6) li:not(:first-child) {
+  height: 33px;
+}
+
+.footer_bottom-part {
+  height: 83px;
+  width: 100%;
+  background-color: #282c31;
+  display: flex;
+  padding: 15px 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_bottom-part li {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 0 15px;
+  border-right: solid 1px #D3D7DA;
+}
+
+.footer_bottom-part li:nth-child(5) {
+  border-right: none;
+}
+
+.footer_bottom-part li a {
+  color: #D3D7DA;
+  font-size: 12px;
+}
+
+.footer_bottom-part .adidas-CR {
+  padding-top: 15px;
+}
+
+.footer_bottom-part span {
+  color: #D3D7DA;
+  font-size: 12px;
+}
